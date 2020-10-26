@@ -13,14 +13,14 @@ const Navigation = (props) => {
       p-4 mb-0 mb:py-6
     ">
       <div className="
-        container mx-auto md:px-4 
-        flex flex-wrap md:flex-no-wrap items-center justify-between
+        container mx-auto lg:px-4 
+        flex flex-wrap lg:flex-no-wrap items-center justify-between
       ">
         <a className="py-1 mr-4 text-xl" href="#top">
           Patricia Ribeiro
         </a>
         <button className="
-            md:hidden bg-teal-600 rounded-lg p-4
+            lg:hidden bg-teal-600 rounded-lg p-4
             uppercase font-bold text-white leading-none text-sm
           "
           type="button"
@@ -31,10 +31,10 @@ const Navigation = (props) => {
           <i className="fas fa-bars"></i>
         </button>
         <div
-          className="w-full h-0 md:w-auto md:h-auto collapse overflow-hidden"
+          className="w-full h-0 lg:w-auto lg:h-auto collapse overflow-hidden"
           style={showNav ? { height: `${navLinksHeight() + 16}px` } : {}}
         >
-          <ul id="navLinks" className="flex flex-col mt-4 md:mt-0 md:flex-row  ml-auto">
+          <ul id="navLinks" className="flex flex-col mt-4 lg:mt-0 lg:flex-row  ml-auto">
             <li className="mx-1">
               <a className="block p-3 rounded-lg" href="#portfolio">Portfolio</a>
             </li>

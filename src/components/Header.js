@@ -12,12 +12,12 @@ const Header = () => (
           alt="avatar"
           src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBob&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=Blank&clotheType=ShirtScoopNeck&clotheColor=Heather&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Pale'
         />
-        <h1 className="font-headings font-bold text-4xl md:text-6xl leading-tight my-0 uppercase">
+        <h1 className="font-headings font-bold text-4xl lg:text-6xl leading-tight my-0 uppercase">
           Hi there,<br />
           I'm Patricia Ribeiro!
           </h1>
         <Divider light={true} />
-        <p className="text-xl md:text-2xl font-light my-0">Proud Geek & Software Developer</p>
+        <p className="text-xl lg:text-2xl font-light my-0">Proud Geek & Software Developer</p>
       </div>
     </div>
   </header>
