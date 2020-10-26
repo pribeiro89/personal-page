@@ -8,6 +8,8 @@
 
 body {
   @apply font-sans antialiased m-0;
+  @apply text-base font-normal leading-normal;
+  @apply text-gray-900 text-left bg-white;
 }
 
 code {
@@ -16,7 +18,7 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-headings font-bold leading-tight my-0;
+  @apply font-headings font-bold leading-tight uppercase my-0;
 }
 
 /*
