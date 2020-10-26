@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 const Navigation = (props) => {
   const [showNav, setShowNav] = useState(false);
 
+  const navLinksHeight = () => document.getElementById('navLinks').clientHeight;
+
   return (
     <nav className="
       fixed top-0 inset-x-0 z-50 
@@ -18,8 +20,8 @@ const Navigation = (props) => {
           Patricia Ribeiro
         </a>
         <button className="
-            md:hidden bg-primary rounded-lg p-4
-            uppercase font-bold text-white leading-none text-xs
+            md:hidden bg-teal-600 rounded-lg p-4
+            uppercase font-bold text-white leading-none text-sm
           "
           type="button"
           aria-label="Toggle navigation"
@@ -28,11 +30,11 @@ const Navigation = (props) => {
           Menu{' '}
           <i className="fas fa-bars"></i>
         </button>
-        <div className={`
-          ${!showNav ? 'hidden' : 'block'} 
-          w-full md:w-auto md:flex md:flex-auto items-center
-        `}>
-          <ul className="flex flex-col md:flex-row mt-4 md:mt-0 ml-auto">
+        <div
+          className="w-full h-0 md:w-auto md:h-auto collapse overflow-hidden"
+          style={showNav ? { height: `${navLinksHeight() + 16}px` } : {}}
+        >
+          <ul id="navLinks" className="flex flex-col mt-4 md:mt-0 md:flex-row  ml-auto">
             <li className="mx-1">
               <a className="block p-3 rounded-lg" href="#portfolio">Portfolio</a>
             </li>
