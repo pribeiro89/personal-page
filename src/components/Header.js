@@ -14,7 +14,7 @@ const Header = () => (
         />
         <h1 className="font-headings font-bold text-4xl md:text-6xl leading-tight my-0 uppercase">
           Hi there,<br />
-            I'm Patricia Ribeiro!
+          I'm Patricia Ribeiro!
           </h1>
         <Divider light={true} />
         <p className="text-xl md:text-2xl font-light my-0">Proud Geek & Software Developer</p>

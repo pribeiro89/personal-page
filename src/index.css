@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   @apply font-sans antialiased m-0;
 }
@@ -11,6 +15,35 @@ code {
     monospace;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  @apply font-headings font-bold leading-tight my-0;
+}
+
+/*
+ * Classes
+ */
+
 .collapse {
   transition: height 400ms ease-in-out;
 }
+
+.btn {
+  @apply inline-block font-normal text-center text-base leading-normal;
+  @apply whitespace-no-wrap align-middle select-none;
+  @apply border-2 border-solid border-transparent rounded-lg;
+  @apply py-1 px-3;
+
+  transition-property: color, background-color, border-color, box-shadow;
+  @apply ease-in-out duration-150;
+  @apply cursor-pointer;
+}
+
+.btn-outline-light {
+  @apply text-gray-300 bg-transparent border-gray-300;
+}
+
+.btn-social {
+  @apply inline-flex w-12 h-12 text-xl rounded-full;
+  @apply justify-center items-center;
+}
+
