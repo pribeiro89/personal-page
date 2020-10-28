@@ -20,7 +20,7 @@ const Home = () => (
     <Header />
     <ContentSection light={true}>
       Portfolio goes here
-        </ContentSection>
+    </ContentSection>
     <Footer />
     <Copyright />
   </div>
