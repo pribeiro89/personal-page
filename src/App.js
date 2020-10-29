@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Route } from "react-router-dom";
-import ContentSection from './components/ContentSection';
+import Portfolio from './components/Portfolio';
 import Copyright from './components/Copyright';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -18,9 +18,7 @@ const App = () => {
 const Home = () => (
   <div>
     <Header />
-    <ContentSection light={true}>
-      Portfolio goes here
-    </ContentSection>
+    <Portfolio />
     <Footer />
     <Copyright />
   </div>
