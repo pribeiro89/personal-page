@@ -1,13 +1,13 @@
 import React from 'react';
 import Divider from './Divider';
 
-const ContentSection = ({ light, children }) => {
+const ContentSection = ({ light, name, children }) => {
   const color = light ? 'secondary' : 'white';
   return (
-    <section className="py-24">
-      <div className="container px-6 mx-auto">
+    <section id={name}>
+      <div className="container px-6 py-24 mx-auto">
         <h2 className={`text-center text-${color} text-4xl`}>
-          Portfolio
+          {name}
         </h2>
         <Divider light={!light} />
         <div className="flex flex-wrap -mx-6">

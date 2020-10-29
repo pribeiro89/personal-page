@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navigation = (props) => {
   const [showNav, setShowNav] = useState(false);
 
   const navLinksHeight = () => document.getElementById('navLinks').clientHeight;
+  const links = [
+    { path: '#portfolio', name: 'Portfolio' },
+    { path: '#about', name: 'About' },
+    { path: '#experience', name: 'Experience' },
+  ];
 
   return (
     <nav className="
@@ -34,19 +40,18 @@ const Navigation = (props) => {
           className="w-full h-0 lg:w-auto lg:h-auto collapse overflow-hidden"
           style={showNav ? { height: `${navLinksHeight() + 16}px` } : {}}
         >
-          <ul id="navLinks" className="flex flex-col mt-4 lg:mt-0 lg:flex-row  ml-auto">
-            <li className="mx-1">
-              <a className="block p-3 rounded-lg" href="#portfolio">Portfolio</a>
-            </li>
-            <li className="mx-1">
-              <a className="block p-3 rounded-lg" href="#about">About</a>
-            </li>
-            <li className="mx-1">
-              <a className="block p-3 rounded-lg" href="#experience">Experience</a>
-            </li>
-            <li className="mx-1">
-              <a className="block p-3 rounded-lg" href="#contact">Contact</a>
-            </li>
+          <ul id="navLinks" className="flex flex-col mt-4 lg:mt-0 lg:flex-row ml-auto">
+            {links.map((link) => (
+              <li className="mx-1">
+                <Link
+                  className="block p-3 rounded-lg"
+                  to={link.path}
+                  onClick={() => setShowNav(false)}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
