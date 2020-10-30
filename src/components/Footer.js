@@ -15,17 +15,14 @@ const Footer = () => {
             <h4 className="uppercase mb-6 text-2xl">
               Around the web
             </h4>
-            <a href="#" className="btn btn-outline-light btn-social mx-1">
-              <i className="fab fa-fw fa-facebook-f"></i>
-            </a>
-            <a href="#" className="btn btn-outline-light btn-social mx-1">
-              <i className="fab fa-fw fa-twitter"></i>
-            </a>
             <a href="https://github.com/pribeiro89" className="btn btn-outline-light btn-social mx-1">
+              <i class="fab fa-fw fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/patriciaribeiro89" className="btn btn-outline-light btn-social mx-1">
               <i className="fab fa-fw fa-linkedin-in"></i>
             </a>
-            <a href="https://pribeiro89.github.io/personal-page" className="btn btn-outline-light btn-social mx-1">
-              <i className="fab fa-fw fa-dribbble"></i>
+            <a href="mailto:pribeiro.tf@gmail.com" className="btn btn-outline-light btn-social mx-1">
+              <i class="far fa-paper-plane"></i>
             </a>
           </div>
           <div className="relative w-full px-4 lg:mb-0 lg:w-1/3">
