@@ -13,7 +13,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <ContentSection light={true} name="portfolio">
+    <ContentSection name="portfolio">
       {projects.map((project) => (
         <div className="relative w-full px-6 mb-12 md:w-1/2 lg:w-1/3">
           <div className="

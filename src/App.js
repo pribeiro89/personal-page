@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter, Route } from "react-router-dom";
 import Portfolio from './components/Portfolio';
+import About from './components/About';
 import Copyright from './components/Copyright';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -19,6 +20,7 @@ const Home = () => (
   <div>
     <Header />
     <Portfolio />
+    <About />
     <Footer />
     <Copyright />
   </div>
